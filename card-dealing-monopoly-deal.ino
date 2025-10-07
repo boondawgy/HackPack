@@ -296,7 +296,7 @@ Fixed values such as motor speeds, timeouts, and default thresholds.
 #define UV_THRESHOLD_ADDR (numColors * sizeof(RGBColor) + 2)
 
 // GAMES INCLUDED
-const uint8_t numGames = 7;            // Number of *index positions* for pre-programmed games (meaning "number of games" - 1). If you add a game, increment this number.
+const uint8_t numGames = 8;            // Number of *index positions* for pre-programmed games (meaning "number of games" - 1). If you add a game, increment this number.
 const char gamesMenu[][16] PROGMEM = { // "16" defines the max number of characters you can use in these game titles.
     "1-GO FISH",
     "2-21",
@@ -305,7 +305,8 @@ const char gamesMenu[][16] PROGMEM = { // "16" defines the max number of charact
     "5-HEARTS",
     "6-RUMMY",
     "7-CUSTOM GAME", // Custom game is also known as "tagless deal," where all tags except red are removed. User inputs number of cards/players to deal in.
-    "*8-TOOLS"};
+    "*8-TOOLS",
+    "9-MONOPOLY DEAL"};
 
 // TOOL MENUS INCLUDED
 const uint8_t numToolMenus = 5;        // Number of *index positions* for pre-programmed tuning routines (so "number of tool menus" - 1). If you add or subtract one, change this number.
