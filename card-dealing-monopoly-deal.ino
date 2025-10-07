@@ -300,7 +300,7 @@ const uint8_t numGames = 8;            // Number of *index positions* for pre-pr
 const char gamesMenu[][16] PROGMEM = { // "16" defines the max number of characters you can use in these game titles.
     "1-GO FISH",
     "2-21",
-    "3-MONOPOLY DEAL",
+    "3-CRAZY EIGHTS",
     "4-WAR",
     "5-HEARTS",
     "6-RUMMY",
@@ -462,7 +462,7 @@ to check, but using bools is an easy way to both set and check different dealing
 
 bool rotatingCW = false;                   // Indicates clockwise rotation.
 bool rotatingCCW = false;                  // Indicates counter-clockwise rotation.
-bool stopped = true;                       // Indicates when rotation is stopped.
+bool stopped = true;                      // Indicates when rotation is stopped.
 bool correctingCCW = false;                // Indicates when a fine-adjust correction is being made CCW.
 bool correctingCW = false;                 // Indicates when a fine-adjust correction is being made CW.
 bool dealInitialized = false;              // Indicates we have initialized to the red tag and are ready to deal.
