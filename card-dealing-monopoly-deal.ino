@@ -2017,6 +2017,14 @@ void onButton1Release() // This function handles what happens when we release Bu
       cardsInHandToDeal--;
       colorScan();
     }
+    else if (currentGame == 8) // If we're playing Monopoly Deal:
+    {
+      currentDisplayState = LOOK_LEFT;
+      // dealSingleCard();
+      // cardDealt = false;
+      // dealSingleCard();
+      // cardDealt = false;
+    }
     updateDisplay();
   }
   else
@@ -3214,8 +3222,8 @@ void advanceMenu() // Advances menus in UI according to current selection.
       currentDisplayState = DEAL_CARDS;
       currentDealState = DEALING;
 
-      remainingRoundsToDeal = 5; // each player starts with 2 cards in 21
-      postCardsToDeal = 2;       // Cards to deal after main deal (only one round in 21)
+      remainingRoundsToDeal = 5; // each player starts with 5 cards
+      postCardsToDeal = 2;       // Cards to deal after main deal 
       initialRoundsToDeal = remainingRoundsToDeal;
     }
     else // Unknown game
